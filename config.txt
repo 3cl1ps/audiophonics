@@ -1,0 +1,15 @@
+disable_splash=1
+disable_overscan=1
+hdmi_drive=2
+hdmi_blanking=1
+hdmi_force_edid_audio=1
+hdmi_force_hotplug=1
+hdmi_group=1
+dtparam=i2s=on
+dtparam=audio=off
+dtparam=spi=on
+dtoverlay=i-sabre-q2m
+dtparam=i2c_arm=on
+#dtoverlay=disable-wifi
+dtoverlay=disable-bt
+dtoverlay=gpio-ir,gpio_pin=17

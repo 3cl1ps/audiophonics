@@ -1,0 +1,14 @@
+[Unit]
+Description=OLED Display Service
+After=mpd.service
+
+[Service]
+ExecStartPre=/bin/sleep 5
+ExecStart=/usr/bin/python /home/pi/moode_oled_3.12_spi_audiophonics.py
+StandardOutput=null
+Type=simple
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
